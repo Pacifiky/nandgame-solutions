@@ -1,0 +1,11 @@
+# Assembler code 
+A = 1
+D = A
+A = 0x7FFF
+*A = D
+A = 2
+D = A
+A = 0x7FFF
+*A = D
+A = 0
+A;JMP
