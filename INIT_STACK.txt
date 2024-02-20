@@ -1,0 +1,5 @@
+# Assembler code 
+A = 0x0100
+D = A
+A = SP
+*A = D
