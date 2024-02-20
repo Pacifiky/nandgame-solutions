@@ -1,0 +1,25 @@
+# Assembler code 
+DEFINE SCREENADRP 0x3000
+A = 0x4000
+D = A
+A = SCREENADRP
+*A = D
+LOOP:
+A = 32767
+D = -A
+A = SCREENADRP
+A = *A
+*A = D
+D = A
+A = 0x4500
+D = D-A
+A = STOP
+D=D;JGE
+A = 0x0020
+D = A
+A = SCREENADRP
+*A = D+*A
+A = LOOP
+A;JMP
+STOP:
+A=A
