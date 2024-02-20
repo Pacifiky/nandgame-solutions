@@ -1,0 +1,10 @@
+# Assembler code 
+LABEL functionName
+A = SP
+D = *A
+A = LOCALS
+*A = D
+A = localsCount
+D = D+A
+A = SP
+*A = D
