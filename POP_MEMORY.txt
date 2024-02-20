@@ -1,0 +1,4 @@
+# Assembler code 
+POP_D
+POP_A
+*A = D
