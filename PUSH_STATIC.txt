@@ -1,0 +1,4 @@
+# Assembler code 
+A = address
+D = *A
+PUSH_D
