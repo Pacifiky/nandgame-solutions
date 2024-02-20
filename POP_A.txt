@@ -1,0 +1,6 @@
+# Assembler code 
+A = SP
+*A = *A-1
+A = *A
+A = *A
+*A = 0
