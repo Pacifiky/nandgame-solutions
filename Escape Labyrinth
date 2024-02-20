@@ -1,0 +1,27 @@
+# Assembler code 
+chk:
+A = 0x7FFF
+D = *A
+A = 512
+D = D-A
+A = chk
+D;JGE
+A = 0x7FFF
+D = *A
+A = 256
+D = D-A
+A = trn
+D;JEQ
+A = 4
+D = A
+A = 0x7FFF
+*A = D
+A = chk
+A;JMP
+trn:
+A = 8
+D = A
+A = 0x7FFF
+*A = D
+A = chk
+A;JMP
