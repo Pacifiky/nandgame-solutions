@@ -1,0 +1,7 @@
+# Assembler code 
+POP_D
+A = stop
+D;JEQ
+A = label
+JMP
+stop:
