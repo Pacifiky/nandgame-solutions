@@ -1,0 +1,4 @@
+# Assembler code 
+POP_D
+D = -D
+PUSH_D
