@@ -1,0 +1,5 @@
+# Assembler code 
+PUSH_STATIC LOCALS
+PUSH_VALUE index
+ADD
+PUSH_MEMORY
