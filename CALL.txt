@@ -1,0 +1,26 @@
+# Assembler code 
+PUSH_STATIC ARGS
+PUSH_STATIC LOCALS
+PUSH_VALUE After
+A = SP
+D = *A
+A = argumentCount
+D = D-A
+A = 3
+D = D-A
+A = ARGS
+*A = D
+A = functionName
+JMP
+After:
+A = ARGS
+D = *A
+A = 10
+*A = D
+POP_STATIC LOCALS
+POP_STATIC ARGS
+A = 10
+D = *A
+A = SP
+*A = D
+PUSH_STATIC RETVAL
