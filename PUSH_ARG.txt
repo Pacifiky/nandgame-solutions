@@ -1,0 +1,7 @@
+# Assembler code 
+A = index
+D = A
+A = ARGS
+A = D+*A
+D = *A
+PUSH_D
