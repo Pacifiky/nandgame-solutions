@@ -1,0 +1,4 @@
+# Assembler code 
+POP_D
+A = address
+*A = D
