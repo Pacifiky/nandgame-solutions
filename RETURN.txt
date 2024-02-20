@@ -1,0 +1,8 @@
+# Assembler code 
+POP_STATIC RETVAL
+A = LOCALS
+D = *A
+A = SP
+*A = D
+POP_A
+JMP
