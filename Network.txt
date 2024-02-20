@@ -1,0 +1,41 @@
+# Assembler code 
+DEFINE SCREENP 0x3000
+DEFINE CHECKED 0x3001
+A = 0x4000
+D = A
+A = SCREENP
+*A = D
+chk:
+A = 0x6001
+D = *A
+A = 2
+D = D&A
+A = CHECKED
+D = *A-D
+A = chk
+D;JEQ
+
+A = 0x6001
+D = *A
+A = 2
+D = D&A
+A = CHECKED
+*A = D
+
+A = 0x6001
+D = *A
+A = 1
+D = D&A
+A = SCREENP
+A = *A
+D = D+*A
+*A = D+*A
+
+A = chk
+D;JGT
+A = 0x0020
+D = A
+A = SCREENP
+*A = D+*A
+A = chk
+JMP
