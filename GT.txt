@@ -1,0 +1,14 @@
+# Assembler code 
+POP_D
+POP_A
+D = D-A
+A = false
+D;JLT
+D = 0
+PUSH_D
+A = done
+JMP
+false:
+D = -1
+PUSH_D
+done:
